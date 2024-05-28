@@ -1,4 +1,3 @@
-let imagemDoAtor;
 //variáveis do ator
 let xAtor = 100;
 let yAtor = 366;
