@@ -19,12 +19,15 @@ function movimentaAtor() {
 }
 
 function verificaColisao() {
-    //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter);
-    for (let i =0; i < imagemCarros.lenght; i++) {
-        colisao = collideRectCircle(xCarros[i], yCarros[i], 
-    comprimentoCarros, alturaCarros, xAtor, yAtor, 15);
-    if(colisao) {
-        print("Colidiu");
+    // collideRectCircle(x1, y1, width1, height1, cx, cy, diameter);
+    for (let i = 0; i < imagemCarros.length; i++) {
+        colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15);
+        if (colisao) {
+            colidiu();
+        }
     }
-    }
+}
+
+function colidiu() {
+    yAtor = 366;
 }
