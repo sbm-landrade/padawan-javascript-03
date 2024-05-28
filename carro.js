@@ -1,13 +1,17 @@
 //código do carro
 
+
 let xCarros = [600, 600, 600];
 let yCarros = [40, 96, 150]; 
 let velocidadeCarros = [2, 2.5, 3.2];
+let alturaCarros = [50, 50, 50];
+let larguraCarros = [40, 40, 40];
 
 function mostraCarro(){
-  image(imagemCarro, xCarros[0], yCarros[0], 50, 40);
-  image(imagemCarro2, xCarros[1], yCarros[1], 50, 40);
-  image(imagemCarro3, xCarros[2], yCarros[2], 50, 40);
+    for(let i = 0; i < imagemCarros.length; i++){
+        image(imagemCarros[i], xCarros[i], yCarros[i], alturaCarros[i], larguraCarros[i]);
+        print("o valor do i nesta repetição é: " + i);
+    }
 }
 
 function movimentaCarro(){
